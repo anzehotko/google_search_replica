@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: left;
+            }
+            form div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                max-width: 600px;
+            }
+            form div label {
+                flex: 1;
+            }
+            form div input {
+                flex: 2;
+            }
+            .textfield {
+                width: 500px; /* set the desired width here */
+            }
+            .gumb {
+                color: white;
+                background-color: blue;
+                height: 30px;
+                margin-left: 450px;
+                border-radius: 10px;
+            }   
+            nav {
+                display: flex;
+                justify-content:flex-end;
+                align-items: center;
+                color: #fff;
+                padding: 10px; 
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                margin: 5px;
+            }
+            label {
+                padding-right: 10px; /* set the desired spacing here */
+            }
+       </style>
+        <title>Advanced search</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+              <a href="./image.html">Images</a>
+              <a href="./index.html">Home</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <img src="./google.png" width="150"; height="50">
+        </div>
+        <div class="appbar" style="margin-bottom: 15px; color: red; font-weight: 900;">
+            <label style="margin-left: 10px;">Advanced search</label>
+            <div class="e83if"></div>
+        </div>
+        <form action="https://www.google.com/search" method="GET" name="f">
+            <div class="prva">
+                <label for="prvi">all these words:</label>
+                <input class="textfield" id="prvi" type="text" name="as_q">
+            </div>
+            <div class="druga">
+                <label for="drugi">this exact word or phrase:</label>
+                <input class="textfield" id="drugi" type="text" name="as_epq">
+            </div>
+            <div class="tretja">
+                <label for="tretji">any of these words:</label>
+                <input class="textfield" id="tretji" type="text" name="as_oq">
+            </div>
+            <div class="cetrta">
+                <label for="cetrti">none of these words:</label>
+                <input class="textfield" id="cetrti" type="text" name="as_eq">
+            </div>
+            <div>
+                <input class="gumb" type="submit" value="Advanced search">
+            </div>
+        </form>
+    </body>
+</html>

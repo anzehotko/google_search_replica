@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            #mainb {
+               margin: 10px;
+               border-radius: 40px;
+               border-color: gray;
+               width: 40vw;
+               height: 30px;
+            }
+            nav {
+                display: flex;
+                justify-content:flex-end;
+                align-items: center;
+                color: #fff;
+                padding: 10px; 
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                margin: 5px;
+            }
+       </style>
+        <title>Images</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+              <a href="./index.html">Google</a>
+              <a href="./advanced.html">Advanced search</a>
+            </div>
+        </nav>
+        <form action="https://www.google.com/search">
+            <img src="./google.png" width="300"; height="100">
+            <input id="mainb" type="text" name="q">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Google Image Search">
+        </form>
+    </body>
+</html>
